@@ -9,7 +9,7 @@ using namespace std;
 #define sine_ampl 4096 // maximum amplitude value of the sine wave
 #define refclk_frequency 100000000 // reference clock frequency (100 MHz)
 #define freq_low 1 // first frequency for the PWM signal, specified in Hz
-#define freq_high 3.5 // second frequency for the PWM signal, specified in Hz
+#define freq_high 10 // second frequency for the PWM signal, specified in Hz
 // minimum duration of high value of pwm signal for two different frequencies
 const float period[2] = {(float)(refclk_frequency/(sine_ampl*sine_samples*freq_low)),
 (float)(refclk_frequency/(sine_ampl*sine_samples*freq_high))};
